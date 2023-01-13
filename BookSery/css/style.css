@@ -40,7 +40,7 @@
   .Stroke-text{
     color: transparent;
     font-family: Arial, Helvetica, sans-serif;
-    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--bright-blue);
   }
   h1 span{
@@ -50,19 +50,17 @@
 
 
 
-body{
+/* body{
     /* background-color:white; */
     /* height: 200vh; */
-}
+/* } */ 
 nav{
     position: fixed;
     width: 100%;
-    /* background-color:rgba(0,0,0,0.2); */
     height: 70px;
     display: flex;
     justify-content: space-between;
     padding: 0px 50px 0px 100px;
-    /* width: 800vw; */
     align-items: center;
     z-index:1000;
 }
@@ -71,29 +69,28 @@ nav img{
      height: 6rem;
 }
 nav ul{
-       /* margin-left: 450px; */
     display: flex;
     list-style: none;
     gap:1.5rem;
-    /* display: flex; */
     
 }
 
 
 nav ul li a{
-    color: var(--bright-blue);
+    color: var(--Beige);
     font-weight:bold;
     font-size: 1.5rem;
     text-decoration: none;
     letter-spacing: 1px;
     padding: 8px 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    
+    transition: all 0.4s ease;
 }
 nav ul li a:hover,
 nav ul li a:active{
 color:var(--yellow);
-background-color:var(--bright-blue);
+border-bottom:3px solid var(--bright-blue);
+padding-bottom:0.5rem;
 }
 nav .menu-btn i{
     color:#fff;
@@ -201,7 +198,7 @@ display: none;
     justify-content: center;
     flex-wrap: wrap;
     padding-top:10rem;
-    background: var(--Beige);
+    background: var(--blue);
   }
 /* home section text styling */
 .home-text{
@@ -215,15 +212,14 @@ display: none;
 .home-text>h2{
     margin-top:-0.4rem;
     font-size:3.4rem;
+    color:var(--Beige);
 }
-.home-text h2 span{
-    color: var(--sky);
-}
+
 .home-text>p{
     font-size:1.8rem;
     width:90%;
     margin-top:2rem;
-    color: rgb(67, 67, 67);
+    color:var(--Beige);
 }
 .buttons{
     margin-top:2rem;
@@ -234,9 +230,9 @@ display: none;
 .buttons .btn{
     font-size:2rem;
     padding:1rem 1rem;
-    background-color: var(--bright-blue);
+    background-color: var(--Beige);
     border-radius: 10px;
-    color: var(--yellow);
+    color: var(--bright-blue);
     border: 2px solid transparent;
     cursor: pointer;
     transition: all 0.4s linear;
@@ -253,8 +249,8 @@ display: none;
     color: var(--bright-blue);
 }
 .buttons>button:nth-of-type(2):hover{
-    background-color: var(--bright-blue);
-    color: var(--yellow);
+    background-color: var(--Beige);
+    color: var(--bright-blue);
     border: 2px solid transparent;
 }
 
@@ -330,26 +326,27 @@ display: none;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-   
-
   }
   .programs_main{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:2rem;
-    background: #1383CE;          
+    padding:4rem 2rem;
+    background:transparent;          
     gap: 2rem;
     margin-top:4rem;
   }
   .box{
-    /* background: #E9F1FA; */
-       flex:1 1 15rem;
-       /* overflow: hidden; */
+    background: #E9F1FA;
+       flex:1 1 20rem;
+       overflow: hidden;
        text-align: center;
        padding:2rem;
-  }
+       border-radius:20px 100px/120px;
+       transition: all 0.4s ease;
+       
+   }
   .box i{
     font-size: 3rem;
     color: var(--yellow);
@@ -359,15 +356,50 @@ display: none;
     font-size:2rem;
     margin-top:0.5rem;
     /* margin-left:-4rem; */
+    transition: all 0.4s ease;
   }
   .box p{
     margin-top:0.5rem;
     font-size: 1.3rem;
     margin-bottom:1rem;
+    transition: all 0.4s ease;
   }
   .box:hover{
     transform: scale(1.1);
-    background: var(--yellow);
-    border-top-left-radius:20px;
-    border-top-right-radius:20px;
+    background: var(--blue);
+    color: var(--Beige);
+   
   }
+.box:hover p,
+.box:hover h1{
+    color: var(--Beige);
+}
+
+
+/* services section styling */
+    .services{
+        background:var(--blue);
+    }
+    .services>h1{
+        margin-top:4rem;
+        text-transform: uppercase;
+        font-size:4rem;
+        text-align: center;
+        color: #fff;
+    }
+.services .Stroke-text{
+    -webkit-text-stroke-color: #fff;
+    text-transform: uppercase;
+    padding:0rem 3rem 0rem 3rem;
+
+}
+.box1{
+     flex:1 1 20rem;
+     background: #49495d;
+    padding:2rem 4rem;    
+}
+.box1 img{
+    width: 6rem;
+    height:6rem;
+    border-radius:50%;
+}
