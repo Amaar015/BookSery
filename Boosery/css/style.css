@@ -27,7 +27,7 @@
   
 :root{
     --white:#fff; 
-    --blue: #08112a;
+    --blue:#274d73;
      --yellow:#ffff00;
 }
 ::-webkit-scrollbar{
@@ -96,7 +96,7 @@
     display: none;
 }
 .sticky .menu-btn i{
-   color: #262633;
+   color: var(--blue);
 }
 #click{
 display: none;
@@ -211,10 +211,7 @@ display: none;
     justify-content: center;
     flex-wrap: wrap;
     padding-top:10rem;
-    background: linear-gradient(270deg,#64b3f4,#b2e47c);
-    /* background: linear-gradient(70deg,#ecc273,#4da0b0); */
-
-    /* background: var(--blue) */
+    background:var(--blue);
 }
 /* home section text styling */
 .home-text{
@@ -255,29 +252,21 @@ display: none;
     cursor: pointer;
     transition: all 0.4s linear;
 }
-
-.buttons>button:nth-of-type(1){
-      background: var(--white);
-      color: var(--blue);
-      font-size:2rem;
+.buttons .btn:nth-child(1){
+    background: var(--white);
+    color: var(--blue);
 }
-.buttons>button:nth-of-type(1):hover{
-    border:2px solid var(--yellow);
-    color: #fff;
+.buttons .btn:nth-child(1):hover{
     background: transparent;
-    box-shadow: var(--yellow) 0px 0px 12px 1px inset,
-                  var(--yellow) 0px 0px 12px 1px;
-    border-radius:15px;
-
-}
-.buttons>button:nth-of-type(2):hover{
-    border:2px solid var(--yellow);
-    box-shadow: var(--yellow) 0px 0px 12px 1px inset,
-                  var(--yellow) 0px 0px 12px 1px;
-    border-radius:15px;
+    color: var(--white);
 }
 
+.buttons .btn:nth-child(2):hover{
+    background: var(--white);
+    color: var(--blue);
+}
 
+/* curve */
 
 
 
@@ -288,8 +277,8 @@ display: none;
     padding-top: 5rem;
   }
 .home-image img{
-    width:85%;
-    height: 100%;
+    width:65%;
+    height: 40%;
     border-radius: 50% 20%/ 10% 40%;
 }
 
@@ -342,6 +331,8 @@ display: none;
   }
 
 
+
+  
   /* Programs section source code */
   .programs{
     background: url("../image/bgP.jpg");
