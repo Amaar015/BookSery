@@ -211,6 +211,7 @@ display: none;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
     padding-top:10rem;
     background:var(--blue);
 }
