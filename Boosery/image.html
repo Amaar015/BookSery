@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.img{
+   
+
+}
+
+    body{
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 50px;
+        place-content: center;
+        place-items: center;
+        background: black;
+    }
+    img{
+        --s:250px;
+    --b:8px;
+    --g:15px;
+    --c:#fff;
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+        border-radius: 50%;
+    }
+    img:hover{
+        outline: var(--b) solid var(--c);
+        outline-offset: var(--g);
+    }
+</style>
+<body>
+    <img src="image/profile.png" alt="">
+</body>
+</html>
