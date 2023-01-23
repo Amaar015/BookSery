@@ -211,7 +211,7 @@ display: none;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding-top:10rem;
     background:var(--blue);
 }
@@ -411,17 +411,17 @@ display: none;
         background:var(--blue);
         padding:2rem 4%;
     }
-    h1{
+    .services .heading{
         margin-top:4rem;
         text-transform: uppercase;
-        font-size:4rem;
+        font-size:8rem;
         text-align: center;
         color: #fff;
     }
- .Stroke-text{
+ .Stroke-texts{
     -webkit-text-stroke-color: #fff;
     text-transform: uppercase;
-    padding:0rem 3rem 0rem 3rem;
+    /* padding:0rem 3rem 0rem 3rem; */
 
 }
 
@@ -603,14 +603,69 @@ display: none;
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+    border-radius:30px;
+    border:4px solid var(--white); 
+}
 
   .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
   }
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color:#4c4c9f;
+    width: 100%;
+    height: 100%;
+    padding:1rem 1rem;
+    margin-bottom:0rem;
+    border-radius:30px;
+    cursor:grab;
+}
+  .content .image{
+    width: 18rem;
+    height: 18rem;
+    margin-top:-2rem;
+    opacity:0.6;
+    transition: all 0.4s ease;
+  }
+  .content:hover .image
+  {
+         opacity:0.9;
+  }
+
+  .content .detail h4{
+    color: #fff;
+    font-size:3rem;
+    font-weight:500;
+    margin-top: -1rem;
+  }
+  .content .detail p{
+    font-size: 1.8rem;
+    margin-top:1rem;
+    color: #333;
+  }
+  .content .socials{
+     display: flex;
+     gap: 2rem;
+     margin-top:1rem;  
+}
+.content .socials i{
+    font-size:3.5rem;
+    color: #222;
+    transition: all 0.4s ease;
+}
+
+.content .socials i:hover{
+    color:var(--white);
+}
+
 /* footer section */
 .footer{
     position:static;
